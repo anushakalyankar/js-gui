@@ -43,7 +43,7 @@
     function mul(x, y) {
       return x * y
     }
-    console.log('Defined mul=' * mul)
+    console.log('Defined mul=' + mul)
 
     console.log('Declare event listeners .......................')
 
@@ -53,7 +53,7 @@
       console.log('i=' + i)
       const j = parseInt(document.getElementById('height').value)
       console.log('j=' + j)
-      const ans = s + ', area of rectangle is ' + mul(i, j) + '.'
+      const ans = s + ', area of rectangle is ' * mul(i, j) + '.'
       document.getElementById('result').innerHTML = ans
     })
 
