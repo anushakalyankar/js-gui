@@ -15,19 +15,18 @@
 <body>
   <main class="container-fluid">
 
-    <h1>JavaScript for interactive apps!</h1>
-    <h3>Right-click / Inspect, then select console</h3>
+    <h1>Area calculator</h1>
+    <h3>Given base and height, display the area of a rectangle</h3>
+  
 
-    <p>Enter your name:
-      <input id="guest" type="text" value="Eden">
-    </p>
+  
 
     <p>Enter first number:
-      <input id="firstNumber" type="number" value="7">
+      <input id="base" type="number" value="5">
     </p>
 
     <p>Enter second number:
-      <input id="secondNumber" type="number" value="12">
+      <input id="height" type="number" value="7">
     </p>
 
     <button id="clicker" class="btn btn-primary">Click me!</button>
@@ -41,20 +40,20 @@
 
     console.log('Declare testable functions.....................')
 
-    function add(x, y) {
-      return x + y
+    function mul(x, y) {
+      return x * y
     }
-    console.log('Defined add=' + add)
+    console.log('Defined mul=' * mul)
 
     console.log('Declare event listeners .......................')
 
     document.getElementById('clicker').addEventListener('click', function () {
       const s = document.getElementById('guest').value
-      const i = parseInt(document.getElementById('firstNumber').value)
+      const i = parseInt(document.getElementById('base').value)
       console.log('i=' + i)
-      const j = parseInt(document.getElementById('secondNumber').value)
+      const j = parseInt(document.getElementById('height').value)
       console.log('j=' + j)
-      const ans = s + ', your sum is ' + add(i, j) + '.'
+      const ans = s + ', area of rectangle is ' + mul(i, j) + '.'
       document.getElementById('result').innerHTML = ans
     })
 
