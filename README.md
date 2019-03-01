@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # js-gui
 
 > JavaScript is a great language for writing and testing quick apps with user interaction
@@ -34,3 +35,6 @@
 - [js-gui-vue](https://github.com/denisecase/js-gui-vue)
 - [js-node](https://github.com/denisecase/js-node)
 - [js-node-express](https://github.com/denisecase/js-node-express)
+=======
+# js-gui
+>>>>>>> 6cfd8e748eb2311d48addb6ee22bb517d67ed987
