@@ -15,18 +15,19 @@
 <body>
   <main class="container-fluid">
 
-    <h1>Area calculator</h1>
-    <h3>Given base and height, display the area of a rectangle</h3>
+    <h1>Competition Estimator</h1>
+    <h3>Given number of students applying and count of open positions, display students per position (students/position)</h3>
+       
   
 
   
 
-    <p>Enter first number:
-      <input id="base" type="number" value="5">
+    <p>Enter number of students:
+      <input id='students' type="number">
     </p>
 
-    <p>Enter second number:
-      <input id="height" type="number" value="7">
+    <p>Enter number of positions:
+      <input id='positions' type="number">
     </p>
 
     <button id="clicker" class="btn btn-primary">Click me!</button>
@@ -40,20 +41,22 @@
 
     console.log('Declare testable functions.....................')
 
-    function mul(x, y) {
-      return x * y
+    function div(students,positions) {
+      return students/positions;
     }
-    console.log('Defined mul=' + mul)
+    console.log('Defined div=' / div)
 
     console.log('Declare event listeners .......................')
 
     document.getElementById('clicker').addEventListener('click', function () {
-      const s = document.getElementById('guest').value
-      const i = parseInt(document.getElementById('base').value)
+      const s = document.getElementById('result').value
+      const i = parseInt(document.getElementById('students').value)
       console.log('i=' + i)
-      const j = parseInt(document.getElementById('height').value)
+      const j = parseInt(document.getElementById('positions').value)
       console.log('j=' + j)
-      const ans = s + ', area of rectangle is ' * mul(i, j) + '.'
+      let ans=i/j
+      console.log(ans)
+      ans = "The number of students per position is  "  + ans 
       document.getElementById('result').innerHTML = ans
     })
 
